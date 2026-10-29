@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de JavaScript - Interacciones HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Curso de JavaScript Aplicado a HTML</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Modificar contenido HTML</a>
+    <a href="#">Modificar estilos CSS</a>
+    <a href="#">Modificar atributos HTML</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Bienvenido al Curso</h2>
+      <p>Aprende JavaScript de forma práctica modificando el DOM de HTML y CSS.</p>
+    </section>
+
+    <section id="contenido">
+      <h2>Modificar Contenido HTML</h2>
+      <p id="demo-contenido">Texto original sin modificar.</p>
+      <button onclick="document.getElementById('demo-contenido').innerHTML = '¡Texto modificado con JavaScript!'">Cambiar Texto</button>
+    </section>
+
+    <section id="estilos">
+      <h2>Modificar Estilos CSS</h2>
+      <!-- Ejemplo interactivo con código comentado en script -->
+      <p id="demo-estilo">Este texto cambiará de estilo.</p>
+      <button onclick="document.getElementById('demo-estilo').style.color = 'red'; document.getElementById('demo-estilo').style.fontSize = '20px';">Cambiar Estilo</button>
+    </section>
+
+    <section id="atributos">
+      <h2>Modificar Atributos HTML</h2>
+      <img id="demo-img" src="https://via.placeholder.com/100" alt="Imagen inicial">
+      <br>
+      <button onclick="document.getElementById('demo-img').src='https://via.placeholder.com/150/0000FF/808080'">Cambiar Atributo SRC</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Curso de Formación JavaScript para Empresas</p>
+  </footer>
+</body>
+</html>
